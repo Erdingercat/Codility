@@ -1,0 +1,130 @@
+#cert-form tr { vertical-align: top;}
+#cert-form td input { font-size: 12px; color: black; }
+#cert-form td { font-size: 10px; color: #555; padding-bottom:10px; }
+
+table.cert { 
+    padding:0px;border:0px; border-spacing:0px; 
+    margin:0px; margin-left:auto; margin-right:auto; margin-top: 1em;
+}
+
+.cert .pt16 {
+    font-size: 16px;
+}
+
+.cert div.c-para {
+    text-align: center;
+    width: 540px;
+    color: #777;
+    margin: 0em auto 1em auto;
+}
+
+.cert div.c-para a { color: #333; }
+.cert div.c-para a:hover { color: #aaa; }
+
+
+.cert ul.c-details {
+    list-style: none;
+}
+
+.cert ul.c-details li {
+    margin:0px;
+    padding:14px 0px;
+    border-bottom: 1px dotted #777;
+}
+
+.cert .c-label {
+    text-transform:uppercase;
+    font-size: 12px;
+    padding-top:3px;
+    padding-right: 5px;
+    float: left;
+    clear: left;
+    background:white;
+}
+
+.cert .c-value {
+    float: right;
+    clear: right;
+    padding-left: 5px;
+    background:white;
+}
+
+table.cert td { padding:0px;margin:0px;border:0px; border-spacing:0px; }
+
+table.cert td.left { width:88px; }
+table.cert td.left2 { width:120px; }
+table.cert td.middle { width:370px; }
+table.cert td.middle2 { width:610px; vertical-align: top; }
+table.cert td.right2 { width: 120px; }
+table.cert td.right { width:88px; }
+
+table.cert .c-header td { height: 106px; }
+table.cert .c-body td { min-height: 510px; }
+table.cert .c-footer td { height: 27px; }
+
+table.cert tr.c-body td.middle2 { text-align:center; font-family: georgia; }
+
+span.c-badge {
+    display:block;
+    width:125px;
+    height:75px;
+    overflow:hidden;
+    text-align:center;
+}
+
+span.c-badge span {
+    display:block;
+    font-size: 8px;
+    font-weight:bold;
+    color:#555;
+    text-transform:uppercase;
+}
+.c-badge span.cb-edition { padding-top:8px; }
+.c-badge span.cb-type { padding-top:2px; }
+.c-badge span.cb-nick { padding-top:6px; font-size:10px; }
+.c-badge span.cb-long-nick {
+  font-size:7px !important;
+  padding-top:1px !important;
+}
+
+tr.c-header td.middle {
+    font-size: 22px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    vertical-align: top;
+    line-height: 64px;
+    text-align: center;
+    text-transform:uppercase;
+}
+
+table.cert-golden tr.c-header td.left { background: url("../img/cert/gold-tl.png") no-repeat;  }
+table.cert-golden tr.c-header td.left2 { background: url("../img/cert/gold-th.png") repeat-x;  }
+table.cert-golden tr.c-header td.middle { 
+    background: url("../img/cert/gold-title.png") no-repeat;
+    color: #d3ae1f;
+}
+table.cert-golden tr.c-header td.right2 { background: url("../img/cert/gold-th.png") repeat-x; }
+table.cert-golden tr.c-header td.right { background: url("../img/cert/gold-tr.png") no-repeat; }
+table.cert-golden tr.c-body td.left { background: url("../img/cert/gold-lv.png") repeat-y;}
+table.cert-golden tr.c-body td.right { background: url("../img/cert/gold-rv.png") repeat-y;  }
+table.cert-golden tr.c-footer td.left { background: url("../img/cert/gold-bl.png") no-repeat;  }
+table.cert-golden tr.c-footer td.middle2 { background: url("../img/cert/gold-bh.png") repeat-x; }
+table.cert-golden tr.c-footer td.right { background: url("../img/cert/gold-br.png") no-repeat; }
+.cert-golden span.c-badge { background: url("../img/cert/gold-badge.png") no-repeat; }
+.cert-golden-exp span.c-badge { background: url("../img/cert/gold-badge-exp.png") no-repeat !important; }
+
+table.cert-silver tr.c-header td.left { background: url("../img/cert/silver-tl.png") no-repeat;  }
+table.cert-silver tr.c-header td.left2 { background: url("../img/cert/silver-th.png") repeat-x;  }
+table.cert-silver tr.c-header td.middle {
+    background: url("../img/cert/silver-title.png") no-repeat;
+    color: #96a0aa;
+}
+table.cert-silver tr.c-header td.right2 { background: url("../img/cert/silver-th.png") repeat-x; }
+table.cert-silver tr.c-header td.right { background: url("../img/cert/silver-tr.png") no-repeat; }
+table.cert-silver tr.c-body td.left { background: url("../img/cert/silver-lv.png") repeat-y;}
+table.cert-silver tr.c-body td.right { background: url("../img/cert/silver-rv.png") repeat-y;  }
+table.cert-silver tr.c-footer td.left { background: url("../img/cert/silver-bl.png") no-repeat;  }
+table.cert-silver tr.c-footer td.middle2 { background: url("../img/cert/silver-bh.png") repeat-x; }
+table.cert-silver tr.c-footer td.right { background: url("../img/cert/silver-br.png") no-repeat; }
+.cert-silver span.c-badge { background: url("../img/cert/silver-badge.png") no-repeat; }
+.cert-silver-exp span.c-badge { background: url("../img/cert/silver-badge-exp.png") no-repeat !important; }

@@ -1,0 +1,31 @@
+#djDebug {
+    display : none;
+}
+
+#menu {
+    display : none;    
+}
+
+#uservoice-feedback {
+    display : none;
+}
+
+#message-container {
+    display : none;
+}
+
+#crumbs {
+    display : none;
+}
+
+.header {
+    display : none;
+}
+
+.footer {
+    display : none;
+}
+
+.bottom-text {
+    display : none;
+}

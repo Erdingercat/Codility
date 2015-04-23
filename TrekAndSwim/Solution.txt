@@ -1,0 +1,62 @@
+// you can use includes, for example:
+// #include <algorithm>
+
+// you can write to stdout for debugging purposes, e.g.
+// cout << "this is a debug message" << endl;
+
+#include <climits>
+#include <assert.h>
+
+int solution(vector<int> &A) {
+    // write your code in C++11
+    
+    int n = A.size();
+    if(n < 2) return 0;
+    
+    int max_peak = INT_MIN;
+    int pos_peak = 0;
+    bool flag = 0;
+    
+    // Draw the 2d surface chart
+    // Find the peak
+    for(int i = 0; i < n-1; i++ ){
+        int elev = A[i] == 0?1:-1;
+        
+        A[i] = (i>0?A[i-1]:0) + elev;
+        
+        if( elev > 0 && A[i+1] == 1 && A[i] > max_peak){
+            max_peak = A[i];
+            pos_peak = i;
+            flag = 1;
+        }    
+    }
+    if(!flag) return 0;   // No peak is found : cannot find a valid range
+    A[n-1] = A[n-2]+(A[n-1] == 0?1:-1);
+    
+    
+    
+    // Searh the farrest lower position from the peak;
+    // Left side
+    int left = -1 , right;
+    while(left < pos_peak){
+        if(max_peak > 0 || (left!= -1 && A[left] < max_peak)){  
+            // if peak is a positive value, must include the whole left side.
+            // because the surface chart starts from 0;
+            break;
+        }
+        left++;
+    }
+    assert( left <= pos_peak);
+    if(left == pos_peak) left--;  // peak itself can be the left boundary
+    
+    // Right side
+    for(int i = n-1; i >= 0; i--){
+         if(A[i] < max_peak){
+            right = i;
+            break;
+        }
+    }
+    assert(right < n && right > left);
+    
+    return right - left;
+}
